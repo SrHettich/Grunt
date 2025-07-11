@@ -26,10 +26,11 @@ h1{
 
 main{
     max-width: 960px;
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
+    max-height: 100vh;
 }
 
 input{
@@ -66,11 +67,19 @@ button{
     font-weight: bold;
     display: none;
     border: 8px dotted @corTexto;
-
+    
+    
     #valor-resultado{
         display: block;
         font-size: 2em;
-        text-decoration: wavy;
-        margin-top: 0;
+        overflow-x: scroll;  
+    }
+
+    @media @breakpointMobileP{
+        margin-top: 24px;
+
+        #valor-resultado{
+        font-size: 1.5em;
+        }
     }
 }
