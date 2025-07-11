@@ -1,0 +1,71 @@
+@import 'maps.less';
+
+@fontePrincipal: Poppins, sans-serif;
+@fonteTitulo: Lobster, cursive;
+@corTexto: #fff;
+@corDeFundo: #eb3b5a;
+@corTextoBotao: #000;
+@corDeFundoBotao: #f7b733;
+
+body{
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corTexto;
+}
+
+h1{
+    font-family: @fonteTitulo;
+    font-size: 3em;
+    margin-bottom: 24px;
+}
+
+main{
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+input{
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    color: @corTexto;
+    border: 1px solid @corTexto;
+    border-bottom: 6px solid @corTexto;
+    max-width: 160px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 6px 2px #0000007a;
+    margin: 16px auto ;
+    font-size: 2em;
+    text-align: center;
+}
+
+button{
+    padding: 16px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: @fontePrincipal;
+    background-color: @corDeFundoBotao;
+    color: @corTextoBotao;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 2px 3px 6px 2px #0000007a;
+}
+
+.resultado{
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 64px;
+    font-weight: bold;
+    display: none;
+    border: 8px dotted @corTexto;
+
+    #valor-resultado{
+        display: block;
+        font-size: 2em;
+        text-decoration: wavy;
+        margin-top: 0;
+    }
+}
